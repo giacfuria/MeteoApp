@@ -1,0 +1,34 @@
+#!/bin/bash
+
+FORMATO=xml
+UNITA=metric
+LINGUA=it
+#inserire al posto di ? la propria chiave rilasciata da openweathermap.org
+CHIAVE=?
+FILE="$PWD/lista_50_citta.txt"
+
+if [ "$1" = "corrente" ]; then
+	echo "Meteo corrente"
+	OUTPUT="$PWD/meteo_corrente"
+	TIPO="weather"
+elif [ "$1" = "previsione" ]; then
+			echo "Previsione"
+			OUTPUT="$PWD/previsioni"
+			TIPO="forecast"
+		else
+			echo "Parametro assente. Specificare: corrente o previsione"
+			exit
+fi
+
+rm -rf $OUTPUT
+mkdir $OUTPUT
+
+i=1
+while read -r riga; do
+
+	URL="api.openweathermap.org/data/2.5/$TIPO?q=$riga&units=$UNITA&mode=$FORMATO&APPID=$CHIAVE";
+	curl -X GET $URL > "$OUTPUT/$riga.xml"
+	echo "$i: $URL"
+	i=$((i+1))
+
+done < $FILE
