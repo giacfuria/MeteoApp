@@ -2,7 +2,7 @@ Ho creato lo script "OWMUtility" per scaricare i dati meteo usando le api di ope
 
 INSTALLAZIONE:
 
-(1) Decomprimere l'archivio OWMUtility.tar in una cartella qualsiasi.
+(1) Scaricare e decomprimere l'archivio OWMUtility.tar in una cartella qualsiasi.
 
 (2) Inserire nel codice dello script la chiave fornita da openweathermap per l'accesso alle api.
 
