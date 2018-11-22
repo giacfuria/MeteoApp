@@ -8,13 +8,14 @@ INSTALLAZIONE:
 
 Lo script deve essere chiamato da terminale nei due modi seguenti:
 
-- $./OWMUtility corrente 
-  
+```
+./OWMUtility corrente 
+```
   se si vogliono scaricare le condizioni meteo
   attuali per le 50 città contenute nel file "lista_50_citta.txt".
-
-- $./OWMUtility previsione
-   
+```
+./OWMUtility previsione
+```   
   se si vogliono scaricare le previsioni meteo
   Per i 5 giorni successivi a quello attuale per le 50 città contenute nel 
   file "lista_50_citta.txt".
