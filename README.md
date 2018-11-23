@@ -1,5 +1,5 @@
 # README
-Ho creato lo script `OWMUtility` per scaricare i dati meteo usando le api di openweathermap.
+Lo script `OWMUtility` permette di scaricare i dati meteo usando le api di openweathermap.
 
 ### INSTALLAZIONE:
 
@@ -23,8 +23,8 @@ Lo script deve essere chiamato da terminale nei due modi seguenti:
 
 ### NOTE:
 
-1. Lo script, in base al parametro scelto, crea una cartella (meteo_corrente o previsione) nella stessa cartella in cui è posizionato. Questa contiene un file xml (nome_citta.xml) per ogni città.
+1. Lo script, in base al parametro scelto, crea una cartella (`meteo_corrente` o `previsione`) nella stessa cartella in cui è stato eseguito. Questa contiene un file xml (`nome_citta.xml`) per ogni città.
 
 2. Lo script `OWMUtility` e il file `lista_50_citta.txt` devono trovarsi nella stessa cartella. Entrambi possono essere posizionati in una cartella qualsiasi per funzionare. 
 
-3. Il file `lista_50_citta.txt` contiene le 50 città più popolose in Italia. Possono essere aggiunte altre città in un qualsiasi momento.
+3. Il file `lista_50_citta.txt` contiene le 50 città più popolose in Italia. Possono essere aggiunte altre città in un qualsiasi momento. Attenzione a non inserire duplicati (usare diff).
